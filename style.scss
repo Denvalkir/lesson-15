@@ -9,6 +9,18 @@
   position: absolute;
 }
 
+@mixin nav-action {
+  margin-bottom: -11px;
+  margin-top: -11px;
+  width: 193px;
+  height: 46px;
+  border-radius: 10px;
+  background: rgba(27, 89, 248, 0.1019607843);
+  position: relative;
+  padding-left: 11px;
+  left: -11px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -52,6 +64,10 @@ img {
     display: flex;
     align-items: center;
     gap: 15px;
+
+    &:hover {
+      @include nav-action;
+    }
   }
 }
 
@@ -70,6 +86,10 @@ img {
     display: flex;
     align-items: center;
     gap: 15px;
+
+    &:hover {
+      @include nav-action;
+    }
   }
 }
 
